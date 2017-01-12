@@ -23,9 +23,11 @@ class DK extends AbstractEaster
         $greatPrayerDay->modify('+26 days');
 
         $holidays = array(
-            '01-01' => $this->createData('Nytår'),
+            '01-01' => $this->createData('Nytårsdag'),
+            '12-24' => $this->createData('Juleaften'),
             '12-25' => $this->createData('1. Juledag'),
             '12-26' => $this->createData('2. Juledag'),
+            '12-31' => $this->createData('Nytårsaften'),
 
             // Variable dates
             $easter['maundyThursday']->format(self::DATE_FORMAT)  => $this->createData('Skærtorsdag'),
