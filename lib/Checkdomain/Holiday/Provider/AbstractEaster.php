@@ -27,8 +27,6 @@ abstract class AbstractEaster extends AbstractProvider
         $maundyThursday->modify('-3 days');
         $goodFriday = clone $easterSunday;
         $goodFriday->modify('-2 days');
-        $saturday = clone $easterSunday;
-        $saturday->modify('-1 days');
         $ascensionDay = clone $easterSunday;
         $ascensionDay->modify('+39 days');
 
@@ -37,8 +35,6 @@ abstract class AbstractEaster extends AbstractProvider
         $pentecostSunday->modify('+49 days');
         $pentecostMonday = clone $pentecostSunday;
         $pentecostMonday->modify('+1 days');
-        $pentecostSaturday = clone $pentecostSunday;
-        $pentecostSaturday->modify('-1 days');
         $corpusChristi = clone $easterSunday;
         $corpusChristi->modify('+60 days');
 
@@ -46,10 +42,8 @@ abstract class AbstractEaster extends AbstractProvider
             'maundyThursday'    => $maundyThursday,
             'easterSunday'      => $easterSunday,
             'easterMonday'      => $easterMonday,
-            'saturday'          => $saturday,
             'goodFriday'        => $goodFriday,
             'ascensionDay'      => $ascensionDay,
-            'pentecostSaturday' => $pentecostSaturday,
             'pentecostSunday'   => $pentecostSunday,
             'pentecostMonday'   => $pentecostMonday,
             'corpusChristi'     => $corpusChristi
