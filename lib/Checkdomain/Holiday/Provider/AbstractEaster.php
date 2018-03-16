@@ -17,7 +17,7 @@ abstract class AbstractEaster extends AbstractProvider
      */
     protected function getEasterDates($year)
     {
-        $easterSunday = new \DateTime('01.04.'.$year);
+        $easterSunday = new \DateTime('21.03.'.$year);
         $easterSunday->modify(sprintf('+%d days', easter_days($year)));
         $easterSunday->setTimezone(new \DateTimeZone(date_default_timezone_get()));
 
